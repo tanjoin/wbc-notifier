@@ -19,7 +19,7 @@ var main = function() {
                 notifier.notify({
                     'title': 'WBC速報',
                     'message': result,
-                    'icon': 'res/baseball_ball.png',
+                    'icon': 'res/job_sports_jikkyou.png',
                     'open': 'https://baseball.yahoo.co.jp/live/wbc/game/2017032211/score'
                 });
                 text = result;
