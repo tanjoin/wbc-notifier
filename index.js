@@ -13,7 +13,6 @@ var main = function() {
         .evaluate(function() {
             return document.querySelector('#situation > p').innerText;
         })
-        .end()
         .then(function(result) {
             if (text !== result) {
                 notifier.notify({
