@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "tanjoin",
   "private": true,
   "dependencies": {
     "nightmare": "^2.10.0",
