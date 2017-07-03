@@ -8,7 +8,7 @@ var text = '';
 
 var main = function() {
     nightmare
-        .goto('https://baseball.yahoo.co.jp/live/wbc/game/2017032211/score')
+        .goto('https://baseball.yahoo.co.jp/live/wbc/game/2017032311/score')
         .wait('#situation')
         .evaluate(function() {
             return document.querySelector('#situation > p').innerText;
@@ -19,7 +19,7 @@ var main = function() {
                     'title': 'WBC速報',
                     'message': result,
                     'icon': 'res/job_sports_jikkyou.png',
-                    'open': 'https://baseball.yahoo.co.jp/live/wbc/game/2017032211/score'
+                    'open': 'https://baseball.yahoo.co.jp/live/wbc/game/2017032311/score'
                 });
                 text = result;
             }
@@ -30,8 +30,9 @@ var main = function() {
                 'title': 'WBC速報',
                 'message': 'エラーが発生したため通知を終了します',
                 'icon': 'res/job_uguisujou_sports.png',
-                'open': 'https://baseball.yahoo.co.jp/live/wbc/game/2017032211/score'
+                'open': 'https://baseball.yahoo.co.jp/live/wbc/game/2017032311/score'
             });
+			      nightmare.end();
             clearInterval(loop);
         });
 };
